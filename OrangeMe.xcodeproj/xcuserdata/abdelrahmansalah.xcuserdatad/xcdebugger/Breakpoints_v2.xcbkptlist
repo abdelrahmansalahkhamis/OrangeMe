@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "896B60C2-2450-41B5-A9CE-284F556EB12D"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5057F5E9-9131-41E2-9EEA-AE8A397D6726"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "OrangeMe/Views/NewsListScreen.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "5057F5E9-9131-41E2-9EEA-AE8A397D6726 - abd8d7fdac3b4373"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.Text in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.NavigationLink&lt;OrangeMe.NewsCell, SwiftUI.Text&gt;, OrangeMe.NewsCell, OrangeMe.NewsCell)&gt; in closure #2 () -&gt; SwiftUI.LazyVStack&lt;SwiftUI.TupleView&lt;(SwiftUI.NavigationLink&lt;OrangeMe.NewsCell, SwiftUI.Text&gt;, OrangeMe.NewsCell, OrangeMe.NewsCell)&gt;&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.scrollIndicators(_: SwiftUI.ScrollIndicatorVisibility, axes: SwiftUI.Axis.Set) -&gt; some&gt;&gt;.0)&gt; in OrangeMe.NewsListScreen.body.getter : some"
+                  moduleName = "OrangeMe"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abdelrahmansalah/Desktop/OrangeMe/OrangeMe/Views/NewsListScreen.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "376">
+               </Location>
+               <Location
+                  uuid = "5057F5E9-9131-41E2-9EEA-AE8A397D6726 - 829e5e510ba204cf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 () -&gt; OrangeMe.NewsCell in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.NavigationLink&lt;OrangeMe.NewsCell, SwiftUI.Text&gt;, OrangeMe.NewsCell, OrangeMe.NewsCell)&gt; in closure #2 () -&gt; SwiftUI.LazyVStack&lt;SwiftUI.TupleView&lt;(SwiftUI.NavigationLink&lt;OrangeMe.NewsCell, SwiftUI.Text&gt;, OrangeMe.NewsCell, OrangeMe.NewsCell)&gt;&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.scrollIndicators(_: SwiftUI.ScrollIndicatorVisibility, axes: SwiftUI.Axis.Set) -&gt; some&gt;&gt;.0)&gt; in OrangeMe.NewsListScreen.body.getter : some"
+                  moduleName = "OrangeMe"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abdelrahmansalah/Desktop/OrangeMe/OrangeMe/Views/NewsListScreen.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  uuid = "5057F5E9-9131-41E2-9EEA-AE8A397D6726 - 570bef12b182b01f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.Text in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.NavigationLink&lt;OrangeMe.NewsCell, SwiftUI.Text&gt;, OrangeMe.NewsCell, OrangeMe.NewsCell)&gt; in closure #2 () -&gt; SwiftUI.LazyVStack&lt;SwiftUI.TupleView&lt;(SwiftUI.NavigationLink&lt;OrangeMe.NewsCell, SwiftUI.Text&gt;, OrangeMe.NewsCell, OrangeMe.NewsCell)&gt;&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.scrollIndicators(_: SwiftUI.ScrollIndicatorVisibility, axes: SwiftUI.Axis.Set) -&gt; some&gt;&gt;.0)&gt; in closure #1 () -&gt; SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.scrollIndicators(_: SwiftUI.ScrollIndicatorVisibility, axes: SwiftUI.Axis.Set) -&gt; some&gt;&gt;.0)&gt;&gt; in OrangeMe.NewsListScreen.body.getter : some"
+                  moduleName = "OrangeMe"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abdelrahmansalah/Desktop/OrangeMe/OrangeMe/Views/NewsListScreen.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  uuid = "5057F5E9-9131-41E2-9EEA-AE8A397D6726 - 3ea5efcc3201853a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.Text in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.NavigationLink&lt;OrangeMe.NewsCell, SwiftUI.Text&gt;, OrangeMe.NewsCell, OrangeMe.NewsCell, OrangeMe.NewsCell, OrangeMe.NewsCell)&gt; in closure #2 () -&gt; SwiftUI.LazyVStack&lt;SwiftUI.TupleView&lt;(SwiftUI.NavigationLink&lt;OrangeMe.NewsCell, SwiftUI.Text&gt;, OrangeMe.NewsCell, OrangeMe.NewsCell, OrangeMe.NewsCell, OrangeMe.NewsCell)&gt;&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.scrollIndicators(_: SwiftUI.ScrollIndicatorVisibility, axes: SwiftUI.Axis.Set) -&gt; some&gt;&gt;.0)&gt; in closure #1 () -&gt; SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.scrollIndicators(_: SwiftUI.ScrollIndicatorVisibility, axes: SwiftUI.Axis.Set) -&gt; some&gt;&gt;.0)&gt;&gt; in OrangeMe.NewsListScreen.body.getter : some"
+                  moduleName = "OrangeMe"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abdelrahmansalah/Desktop/OrangeMe/OrangeMe/Views/NewsListScreen.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "64">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
