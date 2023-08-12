@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B3814002A87D17C0057A00F /* NewsListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3813FF2A87D17C0057A00F /* NewsListScreen.swift */; };
 		9B6D6EFF2A87B3D600C128BE /* OrangeMeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6D6EFE2A87B3D600C128BE /* OrangeMeApp.swift */; };
 		9B6D6F012A87B3D600C128BE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6D6F002A87B3D600C128BE /* ContentView.swift */; };
 		9B6D6F032A87B3D700C128BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B6D6F022A87B3D700C128BE /* Assets.xcassets */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9B3813FF2A87D17C0057A00F /* NewsListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListScreen.swift; sourceTree = "<group>"; };
 		9B6D6EFB2A87B3D600C128BE /* OrangeMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrangeMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B6D6EFE2A87B3D600C128BE /* OrangeMeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrangeMeApp.swift; sourceTree = "<group>"; };
 		9B6D6F002A87B3D600C128BE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -75,6 +77,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9B3813FE2A87D1520057A00F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9B6D6F002A87B3D600C128BE /* ContentView.swift */,
+				9B3813FF2A87D17C0057A00F /* NewsListScreen.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		9B6D6EF22A87B3D600C128BE = {
 			isa = PBXGroup;
 			children = (
@@ -98,8 +109,8 @@
 		9B6D6EFD2A87B3D600C128BE /* OrangeMe */ = {
 			isa = PBXGroup;
 			children = (
+				9B3813FE2A87D1520057A00F /* Views */,
 				9B6D6EFE2A87B3D600C128BE /* OrangeMeApp.swift */,
-				9B6D6F002A87B3D600C128BE /* ContentView.swift */,
 				9B6D6F022A87B3D700C128BE /* Assets.xcassets */,
 				9B6D6F072A87B3D700C128BE /* Persistence.swift */,
 				9B6D6F092A87B3D700C128BE /* OrangeMe.xcdatamodeld */,
@@ -266,6 +277,7 @@
 				9B6D6F082A87B3D700C128BE /* Persistence.swift in Sources */,
 				9B6D6F012A87B3D600C128BE /* ContentView.swift in Sources */,
 				9B6D6EFF2A87B3D600C128BE /* OrangeMeApp.swift in Sources */,
+				9B3814002A87D17C0057A00F /* NewsListScreen.swift in Sources */,
 				9B6D6F0B2A87B3D700C128BE /* OrangeMe.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
