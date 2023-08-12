@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9B6D6EFF2A87B3D600C128BE /* OrangeMeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6D6EFE2A87B3D600C128BE /* OrangeMeApp.swift */; };
+		9B6D6F012A87B3D600C128BE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6D6F002A87B3D600C128BE /* ContentView.swift */; };
+		9B6D6F032A87B3D700C128BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B6D6F022A87B3D700C128BE /* Assets.xcassets */; };
+		9B6D6F062A87B3D700C128BE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B6D6F052A87B3D700C128BE /* Preview Assets.xcassets */; };
+		9B6D6F082A87B3D700C128BE /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6D6F072A87B3D700C128BE /* Persistence.swift */; };
+		9B6D6F0B2A87B3D700C128BE /* OrangeMe.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9B6D6F092A87B3D700C128BE /* OrangeMe.xcdatamodeld */; };
+		9B6D6F152A87B3D700C128BE /* OrangeMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6D6F142A87B3D700C128BE /* OrangeMeTests.swift */; };
+		9B6D6F1F2A87B3D700C128BE /* OrangeMeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6D6F1E2A87B3D700C128BE /* OrangeMeUITests.swift */; };
+		9B6D6F212A87B3D700C128BE /* OrangeMeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6D6F202A87B3D700C128BE /* OrangeMeUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9B6D6F112A87B3D700C128BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9B6D6EF32A87B3D600C128BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B6D6EFA2A87B3D600C128BE;
+			remoteInfo = OrangeMe;
+		};
+		9B6D6F1B2A87B3D700C128BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9B6D6EF32A87B3D600C128BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B6D6EFA2A87B3D600C128BE;
+			remoteInfo = OrangeMe;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9B6D6EFB2A87B3D600C128BE /* OrangeMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrangeMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B6D6EFE2A87B3D600C128BE /* OrangeMeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrangeMeApp.swift; sourceTree = "<group>"; };
+		9B6D6F002A87B3D600C128BE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9B6D6F022A87B3D700C128BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9B6D6F052A87B3D700C128BE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9B6D6F072A87B3D700C128BE /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		9B6D6F0A2A87B3D700C128BE /* OrangeMe.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OrangeMe.xcdatamodel; sourceTree = "<group>"; };
+		9B6D6F102A87B3D700C128BE /* OrangeMeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrangeMeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B6D6F142A87B3D700C128BE /* OrangeMeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrangeMeTests.swift; sourceTree = "<group>"; };
+		9B6D6F1A2A87B3D700C128BE /* OrangeMeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrangeMeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B6D6F1E2A87B3D700C128BE /* OrangeMeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrangeMeUITests.swift; sourceTree = "<group>"; };
+		9B6D6F202A87B3D700C128BE /* OrangeMeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrangeMeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9B6D6EF82A87B3D600C128BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B6D6F0D2A87B3D700C128BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B6D6F172A87B3D700C128BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9B6D6EF22A87B3D600C128BE = {
+			isa = PBXGroup;
+			children = (
+				9B6D6EFD2A87B3D600C128BE /* OrangeMe */,
+				9B6D6F132A87B3D700C128BE /* OrangeMeTests */,
+				9B6D6F1D2A87B3D700C128BE /* OrangeMeUITests */,
+				9B6D6EFC2A87B3D600C128BE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9B6D6EFC2A87B3D600C128BE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9B6D6EFB2A87B3D600C128BE /* OrangeMe.app */,
+				9B6D6F102A87B3D700C128BE /* OrangeMeTests.xctest */,
+				9B6D6F1A2A87B3D700C128BE /* OrangeMeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9B6D6EFD2A87B3D600C128BE /* OrangeMe */ = {
+			isa = PBXGroup;
+			children = (
+				9B6D6EFE2A87B3D600C128BE /* OrangeMeApp.swift */,
+				9B6D6F002A87B3D600C128BE /* ContentView.swift */,
+				9B6D6F022A87B3D700C128BE /* Assets.xcassets */,
+				9B6D6F072A87B3D700C128BE /* Persistence.swift */,
+				9B6D6F092A87B3D700C128BE /* OrangeMe.xcdatamodeld */,
+				9B6D6F042A87B3D700C128BE /* Preview Content */,
+			);
+			path = OrangeMe;
+			sourceTree = "<group>";
+		};
+		9B6D6F042A87B3D700C128BE /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9B6D6F052A87B3D700C128BE /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9B6D6F132A87B3D700C128BE /* OrangeMeTests */ = {
+			isa = PBXGroup;
+			children = (
+				9B6D6F142A87B3D700C128BE /* OrangeMeTests.swift */,
+			);
+			path = OrangeMeTests;
+			sourceTree = "<group>";
+		};
+		9B6D6F1D2A87B3D700C128BE /* OrangeMeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9B6D6F1E2A87B3D700C128BE /* OrangeMeUITests.swift */,
+				9B6D6F202A87B3D700C128BE /* OrangeMeUITestsLaunchTests.swift */,
+			);
+			path = OrangeMeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9B6D6EFA2A87B3D600C128BE /* OrangeMe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B6D6F242A87B3D700C128BE /* Build configuration list for PBXNativeTarget "OrangeMe" */;
+			buildPhases = (
+				9B6D6EF72A87B3D600C128BE /* Sources */,
+				9B6D6EF82A87B3D600C128BE /* Frameworks */,
+				9B6D6EF92A87B3D600C128BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OrangeMe;
+			productName = OrangeMe;
+			productReference = 9B6D6EFB2A87B3D600C128BE /* OrangeMe.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9B6D6F0F2A87B3D700C128BE /* OrangeMeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B6D6F272A87B3D700C128BE /* Build configuration list for PBXNativeTarget "OrangeMeTests" */;
+			buildPhases = (
+				9B6D6F0C2A87B3D700C128BE /* Sources */,
+				9B6D6F0D2A87B3D700C128BE /* Frameworks */,
+				9B6D6F0E2A87B3D700C128BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9B6D6F122A87B3D700C128BE /* PBXTargetDependency */,
+			);
+			name = OrangeMeTests;
+			productName = OrangeMeTests;
+			productReference = 9B6D6F102A87B3D700C128BE /* OrangeMeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9B6D6F192A87B3D700C128BE /* OrangeMeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B6D6F2A2A87B3D700C128BE /* Build configuration list for PBXNativeTarget "OrangeMeUITests" */;
+			buildPhases = (
+				9B6D6F162A87B3D700C128BE /* Sources */,
+				9B6D6F172A87B3D700C128BE /* Frameworks */,
+				9B6D6F182A87B3D700C128BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9B6D6F1C2A87B3D700C128BE /* PBXTargetDependency */,
+			);
+			name = OrangeMeUITests;
+			productName = OrangeMeUITests;
+			productReference = 9B6D6F1A2A87B3D700C128BE /* OrangeMeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9B6D6EF32A87B3D600C128BE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					9B6D6EFA2A87B3D600C128BE = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					9B6D6F0F2A87B3D700C128BE = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 9B6D6EFA2A87B3D600C128BE;
+					};
+					9B6D6F192A87B3D700C128BE = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 9B6D6EFA2A87B3D600C128BE;
+					};
+				};
+			};
+			buildConfigurationList = 9B6D6EF62A87B3D600C128BE /* Build configuration list for PBXProject "OrangeMe" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9B6D6EF22A87B3D600C128BE;
+			productRefGroup = 9B6D6EFC2A87B3D600C128BE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9B6D6EFA2A87B3D600C128BE /* OrangeMe */,
+				9B6D6F0F2A87B3D700C128BE /* OrangeMeTests */,
+				9B6D6F192A87B3D700C128BE /* OrangeMeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9B6D6EF92A87B3D600C128BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B6D6F062A87B3D700C128BE /* Preview Assets.xcassets in Resources */,
+				9B6D6F032A87B3D700C128BE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B6D6F0E2A87B3D700C128BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B6D6F182A87B3D700C128BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9B6D6EF72A87B3D600C128BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B6D6F082A87B3D700C128BE /* Persistence.swift in Sources */,
+				9B6D6F012A87B3D600C128BE /* ContentView.swift in Sources */,
+				9B6D6EFF2A87B3D600C128BE /* OrangeMeApp.swift in Sources */,
+				9B6D6F0B2A87B3D700C128BE /* OrangeMe.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B6D6F0C2A87B3D700C128BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B6D6F152A87B3D700C128BE /* OrangeMeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B6D6F162A87B3D700C128BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B6D6F212A87B3D700C128BE /* OrangeMeUITestsLaunchTests.swift in Sources */,
+				9B6D6F1F2A87B3D700C128BE /* OrangeMeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9B6D6F122A87B3D700C128BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9B6D6EFA2A87B3D600C128BE /* OrangeMe */;
+			targetProxy = 9B6D6F112A87B3D700C128BE /* PBXContainerItemProxy */;
+		};
+		9B6D6F1C2A87B3D700C128BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9B6D6EFA2A87B3D600C128BE /* OrangeMe */;
+			targetProxy = 9B6D6F1B2A87B3D700C128BE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		9B6D6F222A87B3D700C128BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9B6D6F232A87B3D700C128BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9B6D6F252A87B3D700C128BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"OrangeMe/Preview Content\"";
+				DEVELOPMENT_TEAM = 6QBV5R2H9S;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.asd.OrangeMe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9B6D6F262A87B3D700C128BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"OrangeMe/Preview Content\"";
+				DEVELOPMENT_TEAM = 6QBV5R2H9S;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.asd.OrangeMe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9B6D6F282A87B3D700C128BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6QBV5R2H9S;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.asd.OrangeMeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OrangeMe.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OrangeMe";
+			};
+			name = Debug;
+		};
+		9B6D6F292A87B3D700C128BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6QBV5R2H9S;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.asd.OrangeMeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OrangeMe.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OrangeMe";
+			};
+			name = Release;
+		};
+		9B6D6F2B2A87B3D700C128BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6QBV5R2H9S;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.asd.OrangeMeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OrangeMe;
+			};
+			name = Debug;
+		};
+		9B6D6F2C2A87B3D700C128BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6QBV5R2H9S;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.asd.OrangeMeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OrangeMe;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9B6D6EF62A87B3D600C128BE /* Build configuration list for PBXProject "OrangeMe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B6D6F222A87B3D700C128BE /* Debug */,
+				9B6D6F232A87B3D700C128BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B6D6F242A87B3D700C128BE /* Build configuration list for PBXNativeTarget "OrangeMe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B6D6F252A87B3D700C128BE /* Debug */,
+				9B6D6F262A87B3D700C128BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B6D6F272A87B3D700C128BE /* Build configuration list for PBXNativeTarget "OrangeMeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B6D6F282A87B3D700C128BE /* Debug */,
+				9B6D6F292A87B3D700C128BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B6D6F2A2A87B3D700C128BE /* Build configuration list for PBXNativeTarget "OrangeMeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B6D6F2B2A87B3D700C128BE /* Debug */,
+				9B6D6F2C2A87B3D700C128BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9B6D6F092A87B3D700C128BE /* OrangeMe.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9B6D6F0A2A87B3D700C128BE /* OrangeMe.xcdatamodel */,
+			);
+			currentVersion = 9B6D6F0A2A87B3D700C128BE /* OrangeMe.xcdatamodel */;
+			path = OrangeMe.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9B6D6EF32A87B3D600C128BE /* Project object */;
+}
