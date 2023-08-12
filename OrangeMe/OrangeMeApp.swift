@@ -13,7 +13,8 @@ struct OrangeMeApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            //ContentView()
+            NewsListScreen()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }

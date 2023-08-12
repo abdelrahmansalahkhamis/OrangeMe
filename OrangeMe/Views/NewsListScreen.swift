@@ -10,25 +10,57 @@ import SwiftUI
 struct NewsListScreen: View {
     @State private var searchText = ""
     var body: some View {
-        NavigationStack {
-            ScrollView{
-                LazyVStack {
-                    Text("Searching for \(searchText)")
-                    Text("Searching for \(searchText)")
-                    Text("Searching for \(searchText)")
-                    Text("Searching for \(searchText)")
-                    Text("Searching for \(searchText)")
-                    Text("Searching for \(searchText)")
-                    Text("Searching for \(searchText)")
-                    Text("Searching for \(searchText)")
-                    Text("Searching for \(searchText)")
-                    Text("Searching for \(searchText)")
-                        .navigationTitle("Searchable Example")
-                }
-                Spacer()
+        NavigationView {
+            VStack {
+                HStack(spacing: 5) {
+                    Image(systemName: "magnifyingglass")
+                        .aspectRatio(contentMode: .fill)
+                        .padding(.leading, 10)
+                    TextField("Search ...", text: $searchText)
+                        .frame(height: 45)
+                        .padding([.leading, .trailing], 3)
+                    Button {
+
+                    } label: {
+                        Image("emptyText")
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width: 20, height: 20)
+                    }.padding()
+
+                }.overlay(RoundedRectangle(cornerRadius: 5)
+                    .stroke(Color(.gray), lineWidth: 1)
+                    .foregroundColor(.clear))
+                .padding(.all, 10)
+                ScrollView{
+                    LazyVStack(spacing: 15){
+                        NavigationLink {
+                            Text("Your destination link is here :)")
+                        } label: {
+                            NewsCell()
+                        }
+                    }
+                }.padding(.horizontal, 10)
+                    .scrollIndicators(.never)
             }
         }
-        .searchable(text: $searchText)
+    }
+}
+
+
+struct NewsCell: View {
+    var body: some View {
+        VStack(alignment: .leading) {
+            Image("tomato")
+                .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height / 3)
+                .clipped()
+                .cornerRadius(5)
+            Text("News are come News are come News are come News are come News are come")
+                .padding(.horizontal, 20)
+            Spacer()
+        }.cornerRadius(5)
+            .overlay(RoundedRectangle(cornerRadius: 5)
+                .stroke(.gray, lineWidth: 1))
+
     }
 }
 
