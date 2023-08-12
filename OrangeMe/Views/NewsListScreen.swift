@@ -34,7 +34,7 @@ struct NewsListScreen: View {
                 ScrollView{
                     LazyVStack(spacing: 15){
                         NavigationLink {
-                            Text("Your destination link is here :)")
+                            DetailsScreen()
                         } label: {
                             NewsCell()
                         }
