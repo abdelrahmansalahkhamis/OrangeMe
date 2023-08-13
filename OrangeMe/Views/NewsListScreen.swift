@@ -9,6 +9,7 @@ import SwiftUI
 
 struct NewsListScreen: View {
     @State private var searchText = ""
+    @ObservedObject var viewModel = NewsViewModel()
     var body: some View {
         NavigationView {
             VStack {
@@ -33,14 +34,19 @@ struct NewsListScreen: View {
                 .padding(.all, 10)
                 ScrollView{
                     LazyVStack(spacing: 15){
-                        NavigationLink {
-                            DetailsScreen()
-                        } label: {
-                            NewsCell()
+                        ForEach(viewModel.news, id: \.publishedAt) { _ in
+                            NavigationLink {
+                                DetailsScreen()
+                            } label: {
+                                NewsCell()
+                            }
                         }
                     }
                 }.padding(.horizontal, 10)
                     .scrollIndicators(.never)
+            }
+            .onAppear{
+                viewModel.fetchNews()
             }
         }
     }
