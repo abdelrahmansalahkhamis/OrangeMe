@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B1BB0632A894920006335CF /* NetworkCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1BB0622A894920006335CF /* NetworkCall.swift */; };
+		9B1BB0662A894B7E006335CF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1BB0652A894B7E006335CF /* Constants.swift */; };
+		9B1BB0692A8958A0006335CF /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1BB0682A8958A0006335CF /* NewsModel.swift */; };
+		9B1BB06C2A89623D006335CF /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1BB06B2A89623D006335CF /* NewsViewModel.swift */; };
 		9B3814002A87D17C0057A00F /* NewsListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3813FF2A87D17C0057A00F /* NewsListScreen.swift */; };
 		9B38143C2A87FD620057A00F /* DetailsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B38143B2A87FD620057A00F /* DetailsScreen.swift */; };
 		9B6D6EFF2A87B3D600C128BE /* OrangeMeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6D6EFE2A87B3D600C128BE /* OrangeMeApp.swift */; };
@@ -38,6 +42,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9B1BB0622A894920006335CF /* NetworkCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCall.swift; sourceTree = "<group>"; };
+		9B1BB0652A894B7E006335CF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9B1BB0682A8958A0006335CF /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
+		9B1BB06B2A89623D006335CF /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
 		9B3813FF2A87D17C0057A00F /* NewsListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListScreen.swift; sourceTree = "<group>"; };
 		9B38143B2A87FD620057A00F /* DetailsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsScreen.swift; sourceTree = "<group>"; };
 		9B6D6EFB2A87B3D600C128BE /* OrangeMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrangeMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,6 +87,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9B1BB0612A8948F6006335CF /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				9B1BB0622A894920006335CF /* NetworkCall.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		9B1BB0642A894B68006335CF /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				9B1BB0652A894B7E006335CF /* Constants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		9B1BB0672A89588E006335CF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9B1BB0682A8958A0006335CF /* NewsModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9B1BB06A2A896226006335CF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9B1BB06B2A89623D006335CF /* NewsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		9B3813FE2A87D1520057A00F /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +152,10 @@
 		9B6D6EFD2A87B3D600C128BE /* OrangeMe */ = {
 			isa = PBXGroup;
 			children = (
+				9B1BB06A2A896226006335CF /* ViewModel */,
+				9B1BB0672A89588E006335CF /* Models */,
+				9B1BB0642A894B68006335CF /* Utilities */,
+				9B1BB0612A8948F6006335CF /* NetworkService */,
 				9B3813FE2A87D1520057A00F /* Views */,
 				9B6D6EFE2A87B3D600C128BE /* OrangeMeApp.swift */,
 				9B6D6F022A87B3D700C128BE /* Assets.xcassets */,
@@ -277,12 +321,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B1BB0632A894920006335CF /* NetworkCall.swift in Sources */,
 				9B6D6F082A87B3D700C128BE /* Persistence.swift in Sources */,
 				9B6D6F012A87B3D600C128BE /* ContentView.swift in Sources */,
+				9B1BB0692A8958A0006335CF /* NewsModel.swift in Sources */,
 				9B6D6EFF2A87B3D600C128BE /* OrangeMeApp.swift in Sources */,
 				9B3814002A87D17C0057A00F /* NewsListScreen.swift in Sources */,
 				9B38143C2A87FD620057A00F /* DetailsScreen.swift in Sources */,
+				9B1BB06C2A89623D006335CF /* NewsViewModel.swift in Sources */,
 				9B6D6F0B2A87B3D700C128BE /* OrangeMe.xcdatamodeld in Sources */,
+				9B1BB0662A894B7E006335CF /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
