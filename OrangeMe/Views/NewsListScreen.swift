@@ -20,14 +20,12 @@ struct NewsListScreen: View {
                     TextField("Search ...", text: $searchText)
                         .frame(height: 45)
                         .padding([.leading, .trailing], 3)
-                    Button {
-
-                    } label: {
-                        Image("emptyText")
-                            .aspectRatio(contentMode: .fill)
-                            .frame(width: 20, height: 20)
-                    }.padding()
-
+                        .onChange(of: searchText) { newValue in
+                            // search text must contains 3 or more letters to enable search functionality
+                            if !newValue.isEmpty && newValue.count > 3{
+                                viewModel.searchFor(string: newValue)
+                            }
+                        }
                 }.overlay(RoundedRectangle(cornerRadius: 5)
                     .stroke(Color(.gray), lineWidth: 1)
                     .foregroundColor(.clear))
@@ -52,7 +50,7 @@ struct NewsListScreen: View {
                             }
                         }
                     }.padding(.horizontal, 15)
-                    .scrollDismissesKeyboard(.interactively)
+                        .scrollDismissesKeyboard(.interactively)
                 }
             }
             .onAppear{
@@ -76,16 +74,16 @@ struct NewsCell: View {
                 .aspectRatio(contentMode: .fit)
                 .overlay(RoundedRectangle(cornerRadius: 5)
                     .stroke(.gray, lineWidth: 1))
-                Text(title)
+            Text(title)
                 .font(.system(size: 14, weight: .medium))
-                    .padding(.horizontal, 20)
-                    .multilineTextAlignment(.leading)
-                    .foregroundColor(.secondary)
-                Text(source)
-                    .font(.system(size: 12, weight: .light))
-                    .padding(.horizontal, 20)
-                    .foregroundColor(.secondary)
-                Spacer()
+                .padding(.horizontal, 20)
+                .multilineTextAlignment(.leading)
+                .foregroundColor(.secondary)
+            Text(source)
+                .font(.system(size: 12, weight: .light))
+                .padding(.horizontal, 20)
+                .foregroundColor(.secondary)
+            Spacer()
 
 
         }.cornerRadius(5)
