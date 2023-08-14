@@ -32,18 +32,28 @@ struct NewsListScreen: View {
                     .stroke(Color(.gray), lineWidth: 1)
                     .foregroundColor(.clear))
                 .padding(.all, 10)
-                ScrollView{
-                    LazyVStack(spacing: 15){
-                        ForEach(viewModel.news, id: \.publishedAt) { _ in
-                            NavigationLink {
-                                DetailsScreen()
-                            } label: {
-                                NewsCell()
+                if viewModel.isRefreshing{
+                    VStack(alignment: .center) {
+                        Spacer()
+                        CustomActivityIndicator()
+                            .frame(width: 50, height: 50)
+                            .foregroundColor(.orange)
+                        Spacer()
+                    }
+                }else{
+                    ScrollView{
+                        LazyVStack(spacing: 15){
+                            ForEach(viewModel.news, id: \.publishedAt) { newsData in
+                                NavigationLink {
+                                    DetailsScreen(article: newsData)
+                                } label: {
+                                    NewsCell(title: newsData.title, source: newsData.source.name, imageUrl: newsData.urlToImage)
+                                }
                             }
                         }
-                    }
-                }.padding(.horizontal, 10)
-                    .scrollIndicators(.never)
+                    }.padding(.horizontal, 15)
+                    .scrollDismissesKeyboard(.interactively)
+                }
             }
             .onAppear{
                 viewModel.fetchNews()
@@ -54,15 +64,30 @@ struct NewsListScreen: View {
 
 
 struct NewsCell: View {
+    var title: String
+    var source: String
+    var imageUrl: String?
     var body: some View {
-        VStack(alignment: .leading) {
-            Image("tomato")
+        VStack(alignment: .leading, spacing: 10) {
+            AsyncImage(url: URL(string: imageUrl ?? ""), scale: 1.0)
                 .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height / 3)
                 .clipped()
                 .cornerRadius(5)
-            Text("News are come News are come News are come News are come News are come")
-                .padding(.horizontal, 20)
-            Spacer()
+                .aspectRatio(contentMode: .fit)
+                .overlay(RoundedRectangle(cornerRadius: 5)
+                    .stroke(.gray, lineWidth: 1))
+                Text(title)
+                .font(.system(size: 14, weight: .medium))
+                    .padding(.horizontal, 20)
+                    .multilineTextAlignment(.leading)
+                    .foregroundColor(.secondary)
+                Text(source)
+                    .font(.system(size: 12, weight: .light))
+                    .padding(.horizontal, 20)
+                    .foregroundColor(.secondary)
+                Spacer()
+
+
         }.cornerRadius(5)
             .overlay(RoundedRectangle(cornerRadius: 5)
                 .stroke(.gray, lineWidth: 1))
