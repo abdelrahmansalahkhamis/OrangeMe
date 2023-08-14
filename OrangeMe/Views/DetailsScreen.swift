@@ -8,37 +8,42 @@
 import SwiftUI
 
 struct DetailsScreen: View {
+    let article: Article
     var body: some View {
-        Link(destination: URL(string: "https://www.apple.com")!) {
+        Link(destination: URL(string: article.url)!) {
             VStack(alignment: .leading, spacing: 15) {
-                Image("tomato")
+                AsyncImage(url: URL(string: article.urlToImage!), scale: 1.0)
                     .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height / 3)
                     .clipped()
                     .cornerRadius(5)
-                Text("Google Pixel Phones Getting February 2021 Update with Security Patches")
+                Text(article.title)
                     .font(.system(size: 22, weight: .bold))
                     .padding(.horizontal, 20)
                     .multilineTextAlignment(.leading)
-                Text("Google Pixel Phones are receiving February 2021 security update with few bug fixes and patches for several vulnerabilities,\n The update is available for Pixel 3 and beyond, and is being rolled out in phases, that means not every pixel phone owner will receive it immediately ")
+                    .foregroundColor(.secondary)
+                Text(article.description)
                     .font(.system(size: 18))
                     .padding(.horizontal, 20)
                     .multilineTextAlignment(.leading)
-
-                Text("Apple Podcasts, Google Podcasts")
+                    .foregroundColor(.secondary)
+                Text(article.author ?? "")
                     .font(.system(size: 18, weight: .medium))
                     .padding(.horizontal, 20)
+                    .foregroundColor(.secondary)
 
                 HStack {
-                    Image("tomato")
+                    AsyncImage(url: URL(string: article.urlToImage!), scale: 1.0)
                         .frame(width: 40, height: 40)
                         .clipped()
                         .cornerRadius(15)
                         .scaledToFit()
                     VStack(alignment: .leading) {
-                        Text("Marina Sherof")
+                        Text(article.source.name)
                             .font(.system(size: 14, weight: .medium))
+                            .foregroundColor(.secondary)
                         Text("Reporter")
-                            .font(.system(size: 14, weight: .light))
+                            .font(.system(size: 12, weight: .light))
+                            .foregroundColor(.secondary)
                     }
                     Spacer()
                 }.padding()
@@ -50,6 +55,6 @@ struct DetailsScreen: View {
 
 struct DetailsScreen_Previews: PreviewProvider {
     static var previews: some View {
-        DetailsScreen()
+        DetailsScreen(article: Article(source: Source(id: "", name: ""), author: "", title: "", description: "", url: "", urlToImage: "", publishedAt: "", content: ""))
     }
 }
