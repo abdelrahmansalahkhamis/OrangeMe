@@ -9,7 +9,7 @@ import SwiftUI
 
 struct NewsListScreen: View {
     @State private var searchText = ""
-    @ObservedObject var viewModel = NewsViewModel()
+    @ObservedObject var viewModel = NewsViewModel(newsAPIService: NewsAPIServiceImp())
     var body: some View {
         NavigationView {
             VStack {
@@ -54,7 +54,8 @@ struct NewsListScreen: View {
                 }
             }
             .onAppear{
-                viewModel.fetchNews()
+//                viewModel.fetchNews()
+                viewModel.displayNews()
             }
         }
     }

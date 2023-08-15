@@ -7,412 +7,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "F6A7E230-8E13-47FE-832A-9E15E6070881"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "OrangeMe/NetworkService/NetworkCall.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
-            landmarkName = "fetchNews()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "BA7932B5-D15A-4035-BF32-3EDF4B3F5A00"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "OrangeMe/NetworkService/NetworkCall.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
-            landmarkName = "fetchNews()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "D022F29F-3CE4-4B35-9D52-5480B246B773"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "OrangeMe/NetworkService/NetworkCall.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
-            landmarkName = "fetchNews()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "D022F29F-3CE4-4B35-9D52-5480B246B773 - 72a7ffcbf6338967"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 ((data: Foundation.Data, response: __C.NSURLResponse)) throws -&gt; () in OrangeMe.NetworkManager.fetchNews() -&gt; ()"
-                  moduleName = "OrangeMe"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/abdelrahmansalah/Desktop/OrangeMe/OrangeMe/NetworkService/NetworkCall.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "24"
-                  endingLineNumber = "24"
-                  offsetFromSymbolStart = "712">
-               </Location>
-               <Location
-                  uuid = "D022F29F-3CE4-4B35-9D52-5480B246B773 - 72a7ffcbf6338967"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 ((data: Foundation.Data, response: __C.NSURLResponse)) throws -&gt; () in OrangeMe.NetworkManager.fetchNews() -&gt; ()"
-                  moduleName = "OrangeMe"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/abdelrahmansalah/Desktop/OrangeMe/OrangeMe/NetworkService/NetworkCall.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "24"
-                  endingLineNumber = "24"
-                  offsetFromSymbolStart = "816">
-               </Location>
-               <Location
-                  uuid = "D022F29F-3CE4-4B35-9D52-5480B246B773 - 72a7ffcbf6338967"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 ((data: Foundation.Data, response: __C.NSURLResponse)) throws -&gt; () in OrangeMe.NetworkManager.fetchNews() -&gt; ()"
-                  moduleName = "OrangeMe"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/abdelrahmansalah/Desktop/OrangeMe/OrangeMe/NetworkService/NetworkCall.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "24"
-                  endingLineNumber = "24"
-                  offsetFromSymbolStart = "732">
-               </Location>
-               <Location
-                  uuid = "D022F29F-3CE4-4B35-9D52-5480B246B773 - 72a7ffcbf6338967"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 ((data: Foundation.Data, response: __C.NSURLResponse)) throws -&gt; () in OrangeMe.NetworkManager.fetchNews() -&gt; ()"
-                  moduleName = "OrangeMe"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/abdelrahmansalah/Desktop/OrangeMe/OrangeMe/NetworkService/NetworkCall.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "24"
-                  endingLineNumber = "24"
-                  offsetFromSymbolStart = "704">
-               </Location>
-               <Location
-                  uuid = "D022F29F-3CE4-4B35-9D52-5480B246B773 - 72a7ffcbf6338967"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 ((data: Foundation.Data, response: __C.NSURLResponse)) throws -&gt; () in OrangeMe.NetworkManager.fetchNews() -&gt; ()"
-                  moduleName = "OrangeMe"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/abdelrahmansalah/Desktop/OrangeMe/OrangeMe/NetworkService/NetworkCall.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "24"
-                  endingLineNumber = "24"
-                  offsetFromSymbolStart = "1040">
-               </Location>
-               <Location
-                  uuid = "D022F29F-3CE4-4B35-9D52-5480B246B773 - 72a7ffcbf6338967"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 ((data: Foundation.Data, response: __C.NSURLResponse)) throws -&gt; () in OrangeMe.NetworkManager.fetchNews() -&gt; ()"
-                  moduleName = "OrangeMe"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/abdelrahmansalah/Desktop/OrangeMe/OrangeMe/NetworkService/NetworkCall.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "24"
-                  endingLineNumber = "24"
-                  offsetFromSymbolStart = "1100">
-               </Location>
-               <Location
-                  uuid = "D022F29F-3CE4-4B35-9D52-5480B246B773 - 72a7ffcbf6338967"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 ((data: Foundation.Data, response: __C.NSURLResponse)) throws -&gt; () in OrangeMe.NetworkManager.fetchNews() -&gt; ()"
-                  moduleName = "OrangeMe"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/abdelrahmansalah/Desktop/OrangeMe/OrangeMe/NetworkService/NetworkCall.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "24"
-                  endingLineNumber = "24"
-                  offsetFromSymbolStart = "1032">
-               </Location>
-               <Location
-                  uuid = "D022F29F-3CE4-4B35-9D52-5480B246B773 - 72a7ffcbf6338967"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 ((data: Foundation.Data, response: __C.NSURLResponse)) throws -&gt; () in OrangeMe.NetworkManager.fetchNews() -&gt; ()"
-                  moduleName = "OrangeMe"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/abdelrahmansalah/Desktop/OrangeMe/OrangeMe/NetworkService/NetworkCall.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "24"
-                  endingLineNumber = "24"
-                  offsetFromSymbolStart = "1092">
-               </Location>
-               <Location
-                  uuid = "D022F29F-3CE4-4B35-9D52-5480B246B773 - 72a7ffcbf6338967"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 ((data: Foundation.Data, response: __C.NSURLResponse)) throws -&gt; () in OrangeMe.NetworkManager.fetchNews() -&gt; ()"
-                  moduleName = "OrangeMe"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/abdelrahmansalah/Desktop/OrangeMe/OrangeMe/NetworkService/NetworkCall.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "24"
-                  endingLineNumber = "24"
-                  offsetFromSymbolStart = "1088">
-               </Location>
-               <Location
-                  uuid = "D022F29F-3CE4-4B35-9D52-5480B246B773 - 72a7ffcbf6338967"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 ((data: Foundation.Data, response: __C.NSURLResponse)) throws -&gt; () in OrangeMe.NetworkManager.fetchNews() -&gt; ()"
-                  moduleName = "OrangeMe"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/abdelrahmansalah/Desktop/OrangeMe/OrangeMe/NetworkService/NetworkCall.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "24"
-                  endingLineNumber = "24"
-                  offsetFromSymbolStart = "1148">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "2037FC3D-13BA-42AC-90F8-C1775117728F"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "OrangeMe/NetworkService/NetworkCall.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
-            landmarkName = "fetchNews()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "57CB1BCD-27AB-41D8-BA13-B4FF3465D917"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "OrangeMe/NetworkService/NetworkCall.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "18"
-            endingLineNumber = "18"
-            landmarkName = "fetchNews()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "E99C770D-4F6A-4189-9B1A-780515EE7D00"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "OrangeMe/NetworkService/NetworkCall.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
-            landmarkName = "fetchNews()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "B168D9FB-C026-47F6-B216-A8EA156DC487"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "OrangeMe/ViewModel/NewsViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
-            landmarkName = "fetchNews()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "0AB7B170-F4AD-4BC9-9A17-9415CFE1E89C"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "OrangeMe/ViewModel/NewsViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "49"
-            endingLineNumber = "49"
-            landmarkName = "fetchNews()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "488DEB18-7E91-4B75-95C3-A88D3898E994"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "OrangeMe/ViewModel/NewsViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
-            landmarkName = "fetchNews()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "0E7E3DA9-FF57-4EBE-B89A-9EB59DE85A0E"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "OrangeMe/ViewModel/NewsViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
-            landmarkName = "fetchNews()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "0E7E3DA9-FF57-4EBE-B89A-9EB59DE85A0E - 84123a5181f3cb93"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 ((data: Foundation.Data, response: __C.NSURLResponse)) throws -&gt; Swift.Array&lt;OrangeMe.Article&gt; in OrangeMe.NewsViewModel.fetchNews() -&gt; ()"
-                  moduleName = "OrangeMe"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/abdelrahmansalah/Desktop/OrangeMe/OrangeMe/ViewModel/NewsViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "33"
-                  endingLineNumber = "33"
-                  offsetFromSymbolStart = "736">
-               </Location>
-               <Location
-                  uuid = "0E7E3DA9-FF57-4EBE-B89A-9EB59DE85A0E - 84123a5181f3cb93"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 ((data: Foundation.Data, response: __C.NSURLResponse)) throws -&gt; Swift.Array&lt;OrangeMe.Article&gt; in OrangeMe.NewsViewModel.fetchNews() -&gt; ()"
-                  moduleName = "OrangeMe"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/abdelrahmansalah/Desktop/OrangeMe/OrangeMe/ViewModel/NewsViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "33"
-                  endingLineNumber = "33"
-                  offsetFromSymbolStart = "648">
-               </Location>
-               <Location
-                  uuid = "0E7E3DA9-FF57-4EBE-B89A-9EB59DE85A0E - 84123a5181f3cb93"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 ((data: Foundation.Data, response: __C.NSURLResponse)) throws -&gt; Swift.Array&lt;OrangeMe.Article&gt; in OrangeMe.NewsViewModel.fetchNews() -&gt; ()"
-                  moduleName = "OrangeMe"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/abdelrahmansalah/Desktop/OrangeMe/OrangeMe/ViewModel/NewsViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "33"
-                  endingLineNumber = "33"
-                  offsetFromSymbolStart = "708">
-               </Location>
-               <Location
-                  uuid = "0E7E3DA9-FF57-4EBE-B89A-9EB59DE85A0E - 84123a5181f3cb93"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 ((data: Foundation.Data, response: __C.NSURLResponse)) throws -&gt; Swift.Array&lt;OrangeMe.Article&gt; in OrangeMe.NewsViewModel.fetchNews() -&gt; ()"
-                  moduleName = "OrangeMe"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/abdelrahmansalah/Desktop/OrangeMe/OrangeMe/ViewModel/NewsViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "33"
-                  endingLineNumber = "33"
-                  offsetFromSymbolStart = "848">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "F2278F4E-FC29-4544-907E-A92ECC3E50E0"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "OrangeMe/ViewModel/NewsViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
-            landmarkName = "fetchNews()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "2268CF61-81D4-419F-8B86-D01DA12B2FDF"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "OrangeMe/ViewModel/NewsViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
-            landmarkName = "fetchNews()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "F36E22AF-9CB7-41BC-9F47-2D2BDDA8AAAB"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -470,6 +64,102 @@
                   startingLineNumber = "37"
                   endingLineNumber = "37"
                   offsetFromSymbolStart = "92">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9121F8EB-B3D8-43E8-ABD3-AD74D8FE3722"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "OrangeMe/NetworkService/NetworkCall.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "fetchNews()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8EF55D5C-D71D-42C8-928E-4198789ECD3D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "OrangeMe/NetworkService/NetworkCall.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "fetchNews()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "22FAB07E-8087-4C59-9E0D-6EB87852B71C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "OrangeMe/NetworkService/NetworkCall.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "fetchNews()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6817A4A4-AF91-4EBF-BFDE-869AA0D62076"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "OrangeMe/ViewModel/NewsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "displayNews()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "6817A4A4-AF91-4EBF-BFDE-869AA0D62076 - ed86f7afbf8b9143"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (OrangeMe.NewsModel) -&gt; () in OrangeMe.NewsViewModel.displayNews() -&gt; ()"
+                  moduleName = "OrangeMe"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abdelrahmansalah/Desktop/OrangeMe/OrangeMe/ViewModel/NewsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  uuid = "6817A4A4-AF91-4EBF-BFDE-869AA0D62076 - 6bb8d179355c8a6e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (OrangeMe.Article) -&gt; OrangeMe.Article in closure #2 (OrangeMe.NewsModel) -&gt; () in OrangeMe.NewsViewModel.displayNews() -&gt; ()"
+                  moduleName = "OrangeMe"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abdelrahmansalah/Desktop/OrangeMe/OrangeMe/ViewModel/NewsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "260">
                </Location>
             </Locations>
          </BreakpointContent>

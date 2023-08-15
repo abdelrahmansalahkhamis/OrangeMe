@@ -8,61 +8,33 @@
 import Foundation
 import Combine
 
-class NetworkManager {
-    static let shared = NetworkManager()
+protocol NewsAPIService{
+    func fetchNews() -> AnyPublisher<NewsModel, Error>
+}
 
-    var bag = Set<AnyCancellable>()
-
-    func fetchNews(){
-        if let url = URL(string: FREE_DOMAIN){
-            URLSession
-                .shared
-                .dataTaskPublisher(for: url)
-                .receive(on: DispatchQueue.main)
-                .tryMap ({ res in
-                    guard let response = res.response as? HTTPURLResponse, response.statusCode >= 200 && response.statusCode <= 300 else {
-                        throw NetworkingError.invalidStatusCode
-                    }
-                    let decoder = JSONDecoder()
-
-                    let data = res.data
-                       do {
-                          // process data
-                           let decodedData = try decoder.decode(Welcome.self, from: data)
-                           print("decodedData is :- \(decodedData)")
-                       }
-                    catch  {
-                          print(error)
-                       }
-//                    guard let _ = try? decoder.decode([Article].self, from: res.data) else{
-//                        throw NetworkingError.failedToDecode
-//                    }
-
-                })
-                .sink { [weak self] res in
-                    defer {
-
-                    }
-                    switch res{
-                    case .failure(let error):
-                        return
-                        //return NetworkingError.custom(error: error)
-                    case .finished:
-                        print("res :-- \(res)")
-                    default: break
-                    }
-
-                } receiveValue: { [weak self] news in
-                    print("fetched news are :- \(news)")
+class NewsAPIServiceImp: NewsAPIService {
+    func fetchNews() -> AnyPublisher<NewsModel, Error> {
+        let url = URL(string: FREE_DOMAIN)!
+        return URLSession
+            .shared
+            .dataTaskPublisher(for: url)
+            .receive(on: DispatchQueue.main)
+            .tryMap({ res in
+                guard let response = res.response as? HTTPURLResponse, response.statusCode >= 200 && response.statusCode <= 300 else {
+                    throw NetworkingError.invalidStatusCode
                 }
-                .store(in: &bag)
-
-        }
+                let decoder = JSONDecoder()
+                guard let fetchedData = try? decoder.decode(NewsModel.self, from: res.data) else{
+                    throw NetworkingError.failedToDecode
+                }
+                return fetchedData
+            })
+            .eraseToAnyPublisher()
     }
 }
 
 
-extension NetworkManager {
+extension NewsAPIServiceImp {
     enum NetworkingError: LocalizedError {
         case custom(error: Error)
         case failedToDecode
