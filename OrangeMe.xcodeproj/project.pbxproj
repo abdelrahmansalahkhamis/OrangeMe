@@ -25,6 +25,9 @@
 		9B6D6F152A87B3D700C128BE /* OrangeMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6D6F142A87B3D700C128BE /* OrangeMeTests.swift */; };
 		9B6D6F1F2A87B3D700C128BE /* OrangeMeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6D6F1E2A87B3D700C128BE /* OrangeMeUITests.swift */; };
 		9B6D6F212A87B3D700C128BE /* OrangeMeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6D6F202A87B3D700C128BE /* OrangeMeUITestsLaunchTests.swift */; };
+		9B9A975C2A8BEF1A00F5F6E3 /* MockNewsAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9A975B2A8BEF1A00F5F6E3 /* MockNewsAPIService.swift */; };
+		9B9A975E2A8BEFD500F5F6E3 /* DisplayNewsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9A975D2A8BEFD500F5F6E3 /* DisplayNewsTest.swift */; };
+		9B9A97602A8C04A000F5F6E3 /* FetchNewsAPITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9A975F2A8C04A000F5F6E3 /* FetchNewsAPITest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +69,9 @@
 		9B6D6F1A2A87B3D700C128BE /* OrangeMeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrangeMeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B6D6F1E2A87B3D700C128BE /* OrangeMeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrangeMeUITests.swift; sourceTree = "<group>"; };
 		9B6D6F202A87B3D700C128BE /* OrangeMeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrangeMeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9B9A975B2A8BEF1A00F5F6E3 /* MockNewsAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNewsAPIService.swift; sourceTree = "<group>"; };
+		9B9A975D2A8BEFD500F5F6E3 /* DisplayNewsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayNewsTest.swift; sourceTree = "<group>"; };
+		9B9A975F2A8C04A000F5F6E3 /* FetchNewsAPITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchNewsAPITest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +210,9 @@
 			children = (
 				9B6D6F1E2A87B3D700C128BE /* OrangeMeUITests.swift */,
 				9B6D6F202A87B3D700C128BE /* OrangeMeUITestsLaunchTests.swift */,
+				9B9A975B2A8BEF1A00F5F6E3 /* MockNewsAPIService.swift */,
+				9B9A975D2A8BEFD500F5F6E3 /* DisplayNewsTest.swift */,
+				9B9A975F2A8C04A000F5F6E3 /* FetchNewsAPITest.swift */,
 			);
 			path = OrangeMeUITests;
 			sourceTree = "<group>";
@@ -366,7 +375,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B9A975C2A8BEF1A00F5F6E3 /* MockNewsAPIService.swift in Sources */,
+				9B9A975E2A8BEFD500F5F6E3 /* DisplayNewsTest.swift in Sources */,
 				9B6D6F212A87B3D700C128BE /* OrangeMeUITestsLaunchTests.swift in Sources */,
+				9B9A97602A8C04A000F5F6E3 /* FetchNewsAPITest.swift in Sources */,
 				9B6D6F1F2A87B3D700C128BE /* OrangeMeUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

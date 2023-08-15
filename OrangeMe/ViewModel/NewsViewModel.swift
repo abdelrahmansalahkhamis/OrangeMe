@@ -11,52 +11,28 @@ import Combine
 
 class NewsViewModel: ObservableObject{
 
+    private let newsAPIService: NewsAPIService
+
+    init(newsAPIService: NewsAPIService) {
+        self.newsAPIService = newsAPIService
+    }
+
     @Published var news: [Article] = []
 
     @Published var isRefreshing: Bool = false
 
     @Published var hasError: Bool = false
-    var error: Error?
 
     var bag = Set<AnyCancellable>()
 
-    func fetchNews(){
-        if let url = URL(string: FREE_DOMAIN){
-            isRefreshing = true
-            hasError = false
-            URLSession
-                .shared
-                .dataTaskPublisher(for: url)
-                .receive(on: DispatchQueue.main)
-                .tryMap ({ res in
-                    guard let response = res.response as? HTTPURLResponse, response.statusCode >= 200 && response.statusCode <= 300 else {
-                        throw NetworkingError.invalidStatusCode
-                    }
-                    let decoder = JSONDecoder()
-                    guard let fetchedData = try? decoder.decode(Welcome.self, from: res.data) else{
-                        throw NetworkingError.failedToDecode
-                    }
-                    return fetchedData.articles
+    func displayNews(){
+        newsAPIService.fetchNews()
+            .sink { _ in
+            } receiveValue: { [weak self] news in
+                self?.news = news.articles.map({$0})
+            }
+            .store(in: &bag)
 
-                })
-                .sink { [weak self] res in
-                    defer {
-                        self?.isRefreshing = false
-                    }
-                    switch res{
-                    case .failure(let error):
-                        self?.hasError = true
-                        self?.error = NetworkingError.custom(error: error)
-                        break
-                    default: break
-                    }
-
-                } receiveValue: { [weak self] news in
-                    self?.news = news
-                }
-                .store(in: &bag)
-
-        }
     }
 
     func searchFor(string query: String){
@@ -72,7 +48,7 @@ class NewsViewModel: ObservableObject{
                         throw NetworkingError.invalidStatusCode
                     }
                     let decoder = JSONDecoder()
-                    guard let fetchedData = try? decoder.decode(Welcome.self, from: res.data) else{
+                    guard let fetchedData = try? decoder.decode(NewsModel.self, from: res.data) else{
                         throw NetworkingError.failedToDecode
                     }
                     return fetchedData.articles
@@ -85,7 +61,7 @@ class NewsViewModel: ObservableObject{
                     switch res{
                     case .failure(let error):
                         self?.hasError = true
-                        self?.error = NetworkingError.custom(error: error)
+                        //self?.error = NetworkingError.custom(error: error)
                         break
                     default: break
                     }
