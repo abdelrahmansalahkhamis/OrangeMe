@@ -23,7 +23,7 @@ struct NewsListScreen: View {
                         .onChange(of: searchText) { newValue in
                             // search text must contains 3 or more letters to enable search functionality
                             if !newValue.isEmpty && newValue.count > 3{
-                                viewModel.searchFor(string: newValue)
+                                viewModel.displayNews(searchString: newValue)
                             }
                         }
                 }.overlay(RoundedRectangle(cornerRadius: 5)
@@ -54,7 +54,6 @@ struct NewsListScreen: View {
                 }
             }
             .onAppear{
-//                viewModel.fetchNews()
                 viewModel.displayNews()
             }
         }
@@ -68,13 +67,17 @@ struct NewsCell: View {
     var imageUrl: String?
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
-            AsyncImage(url: URL(string: imageUrl ?? ""), scale: 1.0)
-                .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height / 3)
-                .clipped()
-                .cornerRadius(5)
-                .aspectRatio(contentMode: .fit)
-                .overlay(RoundedRectangle(cornerRadius: 5)
-                    .stroke(.gray, lineWidth: 1))
+            AsyncImage(url: URL(string: imageUrl ?? ""), scale: 1, content: { image in
+                image.resizable()
+            }, placeholder: {
+                ProgressView()
+            })
+            .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height / 3)
+            .clipped()
+            .cornerRadius(5)
+            .aspectRatio(contentMode: .fit)
+            .overlay(RoundedRectangle(cornerRadius: 5)
+                .stroke(.gray, lineWidth: 1))
             Text(title)
                 .font(.system(size: 14, weight: .medium))
                 .padding(.horizontal, 20)

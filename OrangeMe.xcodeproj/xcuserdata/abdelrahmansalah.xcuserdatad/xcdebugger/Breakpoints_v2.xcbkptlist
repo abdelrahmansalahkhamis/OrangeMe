@@ -7,22 +7,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "F36E22AF-9CB7-41BC-9F47-2D2BDDA8AAAB"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "OrangeMe/Views/NewsListScreen.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
-            landmarkName = "body"
-            landmarkType = "24">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "7A3C31B2-58A4-4206-B6D3-D83919CFC31A"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -80,7 +64,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "24"
             endingLineNumber = "24"
-            landmarkName = "fetchNews()"
+            landmarkName = "fetchNews(searchString:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -96,7 +80,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "28"
             endingLineNumber = "28"
-            landmarkName = "fetchNews()"
+            landmarkName = "fetchNews(searchString:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -112,8 +96,40 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "30"
             endingLineNumber = "30"
-            landmarkName = "fetchNews()"
+            landmarkName = "fetchNews(searchString:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "22FAB07E-8087-4C59-9E0D-6EB87852B71C - 14e5b607cac827ac"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 ((data: Foundation.Data, response: __C.NSURLResponse)) throws -&gt; OrangeMe.NewsModel in OrangeMe.NewsAPIServiceImp.fetchNews(searchString: Swift.String) -&gt; Combine.AnyPublisher&lt;OrangeMe.NewsModel, Swift.Error&gt;"
+                  moduleName = "OrangeMe"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abdelrahmansalah/Desktop/OrangeMe/OrangeMe/NetworkService/NetworkCall.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "772">
+               </Location>
+               <Location
+                  uuid = "22FAB07E-8087-4C59-9E0D-6EB87852B71C - 14e5b607cac82720"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 ((data: Foundation.Data, response: __C.NSURLResponse)) throws -&gt; OrangeMe.NewsModel in OrangeMe.NewsAPIServiceImp.fetchNews(searchString: Swift.String) -&gt; Combine.AnyPublisher&lt;OrangeMe.NewsModel, Swift.Error&gt;"
+                  moduleName = "OrangeMe"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abdelrahmansalah/Desktop/OrangeMe/OrangeMe/NetworkService/NetworkCall.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "772">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -126,9 +142,9 @@
             filePath = "OrangeMe/ViewModel/NewsViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
-            landmarkName = "displayNews()"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "displayNews(searchString:)"
             landmarkType = "7">
             <Locations>
                <Location
@@ -160,6 +176,147 @@
                   startingLineNumber = "44"
                   endingLineNumber = "44"
                   offsetFromSymbolStart = "260">
+               </Location>
+               <Location
+                  uuid = "6817A4A4-AF91-4EBF-BFDE-869AA0D62076 - ed86f7afbf8b92d7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (OrangeMe.NewsModel) -&gt; () in OrangeMe.NewsViewModel.displayNews() -&gt; ()"
+                  moduleName = "OrangeMe"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abdelrahmansalah/Desktop/OrangeMe/OrangeMe/ViewModel/NewsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  uuid = "6817A4A4-AF91-4EBF-BFDE-869AA0D62076 - 6bb8d179355c89fa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (OrangeMe.Article) -&gt; OrangeMe.Article in closure #2 (OrangeMe.NewsModel) -&gt; () in OrangeMe.NewsViewModel.displayNews() -&gt; ()"
+                  moduleName = "OrangeMe"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abdelrahmansalah/Desktop/OrangeMe/OrangeMe/ViewModel/NewsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "260">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8564244C-6D60-4BF0-AD5F-71C3CFC570E8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "OrangeMe/NetworkService/NetworkCall.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "fetchNews(searchString:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8564244C-6D60-4BF0-AD5F-71C3CFC570E8 - 2aca8dd7507db172"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "OrangeMe.NewsAPIServiceImp.fetchNews(searchString: Swift.String) -&gt; Combine.AnyPublisher&lt;OrangeMe.NewsModel, Swift.Error&gt;"
+                  moduleName = "OrangeMe"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abdelrahmansalah/Desktop/OrangeMe/OrangeMe/NetworkService/NetworkCall.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "580">
+               </Location>
+               <Location
+                  uuid = "8564244C-6D60-4BF0-AD5F-71C3CFC570E8 - 2aca8dd7507db0fe"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "OrangeMe.NewsAPIServiceImp.fetchNews(searchString: Swift.String) -&gt; Combine.AnyPublisher&lt;OrangeMe.NewsModel, Swift.Error&gt;"
+                  moduleName = "OrangeMe"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abdelrahmansalah/Desktop/OrangeMe/OrangeMe/NetworkService/NetworkCall.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "1840">
+               </Location>
+               <Location
+                  uuid = "8564244C-6D60-4BF0-AD5F-71C3CFC570E8 - 2aca8dd7507db11f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "OrangeMe.NewsAPIServiceImp.fetchNews(searchString: Swift.String) -&gt; Combine.AnyPublisher&lt;OrangeMe.NewsModel, Swift.Error&gt;"
+                  moduleName = "OrangeMe"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abdelrahmansalah/Desktop/OrangeMe/OrangeMe/NetworkService/NetworkCall.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "1112">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5F7BC678-81EF-4C32-9BB7-0EFA28AEA933"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "OrangeMe/Views/NewsListScreen.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "5F7BC678-81EF-4C32-9BB7-0EFA28AEA933 - abc09a122bb4367c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;OrangeMe.Article&gt;, Swift.String, SwiftUI.NavigationLink&lt;OrangeMe.NewsCell, OrangeMe.DetailsScreen&gt;&gt; in closure #3 () -&gt; SwiftUI.LazyVStack&lt;SwiftUI.ForEach&lt;Swift.Array&lt;OrangeMe.Article&gt;, Swift.String, SwiftUI.NavigationLink&lt;OrangeMe.NewsCell, OrangeMe.DetailsScreen&gt;&gt;&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, SwiftUI._ConditionalContent&lt;SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Spacer, &lt;&lt;opaque return type of SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Spacer)&gt;&gt;, &lt;&lt;opaque return type of SwiftUI.View.scrollDismissesKeyboard(SwiftUI.ScrollDismissesKeyboardMode) -&gt; some&gt;&gt;.0&gt;)&gt; in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.onAppear(perform: Swift.Optional&lt;() -&gt; ()&gt;) -&gt; some&gt;&gt;.0 in OrangeMe.NewsListScreen.body.getter : some"
+                  moduleName = "OrangeMe"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abdelrahmansalah/Desktop/OrangeMe/OrangeMe/Views/NewsListScreen.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "128">
+               </Location>
+               <Location
+                  uuid = "5F7BC678-81EF-4C32-9BB7-0EFA28AEA933 - f95f5bb31949cb57"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (OrangeMe.Article) -&gt; SwiftUI.NavigationLink&lt;OrangeMe.NewsCell, OrangeMe.DetailsScreen&gt; in closure #1 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;OrangeMe.Article&gt;, Swift.String, SwiftUI.NavigationLink&lt;OrangeMe.NewsCell, OrangeMe.DetailsScreen&gt;&gt; in closure #3 () -&gt; SwiftUI.LazyVStack&lt;SwiftUI.ForEach&lt;Swift.Array&lt;OrangeMe.Article&gt;, Swift.String, SwiftUI.NavigationLink&lt;OrangeMe.NewsCell, OrangeMe.DetailsScreen&gt;&gt;&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, SwiftUI._ConditionalContent&lt;SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Spacer, &lt;&lt;opaque return type of SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0, SwiftUI.Spacer)&gt;&gt;, &lt;&lt;opaque return type of SwiftUI.View.scrollDismissesKeyboard(SwiftUI.ScrollDismissesKeyboardMode) -&gt; some&gt;&gt;.0&gt;)&gt; in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.onAppear(perform: Swift.Optional&lt;() -&gt; ()&gt;) -&gt; some&gt;&gt;.0 in OrangeMe.NewsListScreen.body.getter : some"
+                  moduleName = "OrangeMe"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abdelrahmansalah/Desktop/OrangeMe/OrangeMe/Views/NewsListScreen.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "168">
                </Location>
             </Locations>
          </BreakpointContent>
