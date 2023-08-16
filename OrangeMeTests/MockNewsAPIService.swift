@@ -1,17 +1,16 @@
 //
-//  NetworkCall.swift
-//  OrangeMe
+//  MockNewsAPIService.swift
+//  OrangeMeUITests
 //
-//  Created by Abdelrahman Salah on 13/08/2023.
+//  Created by Abdelrahman Salah on 15/08/2023.
 //
 
 import Foundation
+@testable import OrangeMe
 import Combine
 
-protocol NewsAPIService{
-    func fetchNews(searchString: String) -> AnyPublisher<NewsModel, Error>
-}
-class NewsAPIServiceImp: NewsAPIService {
+
+class MockNewsAPIServiceImp: NewsAPIService {
     func fetchNews(searchString: String) -> AnyPublisher<NewsModel, Error> {
         let stringURL = "\(DOMAIN)/v2/everything?q=\(searchString)&from=2023-08-13&sortBy=publishedAt&apiKey=\(API_KEY)"
         let url = URL(string: stringURL)!
@@ -33,8 +32,7 @@ class NewsAPIServiceImp: NewsAPIService {
     }
 }
 
-
-extension NewsAPIServiceImp {
+extension MockNewsAPIServiceImp {
     enum NetworkingError: LocalizedError {
         case custom(error: Error)
         case failedToDecode

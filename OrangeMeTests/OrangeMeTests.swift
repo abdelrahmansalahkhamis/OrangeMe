@@ -6,31 +6,44 @@
 //
 
 import XCTest
+import Combine
 @testable import OrangeMe
 
 final class OrangeMeTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    var systemUnderTest: NewsViewModel!
+    var mockNewsAPIService: MockNewsAPIServiceImp!
+
+    var bag = Set<AnyCancellable>()
+
+    override func setUp() {
+        super.setUp()
+        mockNewsAPIService = MockNewsAPIServiceImp()
+        systemUnderTest = NewsViewModel(newsAPIService: mockNewsAPIService)
     }
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    override func tearDown() {
+        systemUnderTest = nil
+        mockNewsAPIService = nil
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+    func testLoadNewsOnLaunch(){
+        XCTAssertEqual(systemUnderTest.news.count, 0)
     }
 
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    func testFetchNewsSuccess(){
+        XCTAssertEqual(systemUnderTest.news.count, 0)
+        let promise = expectation(description: "loading all news")
+        systemUnderTest.displayNews()
+        systemUnderTest.$news
+            .sink { (completion) in
+            XCTFail()
+        } receiveValue: { news in
+            if news.count == 100 {
+                promise.fulfill()
+            }
         }
+        .store(in: &bag)
+        wait(for: [promise], timeout: 5)
     }
-
 }
