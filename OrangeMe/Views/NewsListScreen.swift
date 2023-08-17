@@ -40,7 +40,7 @@ struct NewsListScreen: View {
                     }
                 }else{
                     ScrollView{
-                        LazyVStack(spacing: 15){
+                        LazyVStack(alignment: .center, spacing: 15){
                             ForEach(viewModel.news, id: \.publishedAt) { newsData in
                                 NavigationLink {
                                     DetailsScreen(article: newsData)
@@ -48,14 +48,12 @@ struct NewsListScreen: View {
                                     NewsCell(title: newsData.title, source: newsData.source.name, imageUrl: newsData.urlToImage)
                                 }
                             }
-                        }
-                    }.padding(.horizontal, 15)
-                        .scrollDismissesKeyboard(.interactively)
+                        }.padding(.horizontal, 15)
+                    } .scrollDismissesKeyboard(.interactively)
                 }
             }
-            .onAppear{
-                viewModel.displayNews()
-            }
+        }.onAppear{
+            viewModel.displayNews()
         }
     }
 }
@@ -72,12 +70,10 @@ struct NewsCell: View {
             }, placeholder: {
                 ProgressView()
             })
-            .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height / 3)
+            .frame(width: UIScreen.main.bounds.width - 30, height: UIScreen.main.bounds.height / 3)
             .clipped()
             .cornerRadius(5)
             .aspectRatio(contentMode: .fit)
-            .overlay(RoundedRectangle(cornerRadius: 5)
-                .stroke(.gray, lineWidth: 1))
             Text(title)
                 .font(.system(size: 14, weight: .medium))
                 .padding(.horizontal, 20)
@@ -90,9 +86,13 @@ struct NewsCell: View {
             Spacer()
 
 
-        }.cornerRadius(5)
-            .overlay(RoundedRectangle(cornerRadius: 5)
-                .stroke(.gray, lineWidth: 1))
+        }
+        .cornerRadius(5)
+            .overlay(
+                RoundedRectangle(cornerRadius: 5)
+                .stroke(.gray, lineWidth: 1)
+            )
+            .shadow(color: Color.black.opacity(0.1), radius: 4, x: 0, y: 2)
 
     }
 }
