@@ -51,7 +51,7 @@
 		9B1BB06B2A89623D006335CF /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
 		9B3813FF2A87D17C0057A00F /* NewsListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListScreen.swift; sourceTree = "<group>"; };
 		9B38143B2A87FD620057A00F /* DetailsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsScreen.swift; sourceTree = "<group>"; };
-		9B4AAE6B2A8EA0E800EAAFF2 /* README.md */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = README.md; sourceTree = "<group>"; };
+		9B4AAE6B2A8EA0E800EAAFF2 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		9B52FA962A8A8B62000246A0 /* CustomActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomActivityIndicator.swift; sourceTree = "<group>"; };
 		9B52FA9B2A8A8FF6000246A0 /* Date+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
 		9B6D6EFB2A87B3D600C128BE /* OrangeMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrangeMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
